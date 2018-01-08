@@ -7,16 +7,16 @@
             <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <img src="<?=base_url('assets/images/user.png');?>" alt="">
                 <?php if ($this->session->userdata('usrmsk')==TRUE) {
-                    echo $this->session->userdata('realname');
+                    echo $this->session->userdata('nmasli');
                 } else { echo "User Menu"; } ?>
                 <span class=" fa fa-angle-down"></span>
             </a>
             <ul class="dropdown-menu dropdown-usermenu pull-right">
                   <?php if ($this->session->userdata('usrmsk')== 'TRUE'){ ?>
                 <li><a href="<?=base_url('editpass') ;?>">Ubah Password</a></li>     
-                <li><a href="<?=base_url('cmain/logout');?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                <li><a href="<?=base_url('clogin/logout');?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                 <?php } else { ?>
-                <li><a href="<?=base_url('cmain/login');?>"><i class="fa fa-sign-in pull-right"></i> Log In</a></li>
+                <li><a href="<?=base_url('clogin');?>"><i class="fa fa-sign-in pull-right"></i> Log In</a></li>
                 <?php }?>               
                 <li><a href="javascript:;">Bantuan</a></li>
             </ul>

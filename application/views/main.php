@@ -35,7 +35,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>RSO | SILAT</title>
+        <title>RSO | Pengadaan</title>
 
             <!-- Jquery UI -->
         <link href="<?php echo base_url('assets/vendors/jquery/dist/jquery-ui.min.css');?>" rel="stylesheet">
@@ -103,9 +103,9 @@
                   <div class="profile_info">
                         <span>Welcome,</span>
                         <?php 
-                        echo '<h2>'.$_SESSION['realname'].'</h2>'; ?>
+                        echo '<h2>'.$_SESSION['nmasli'].'</h2>'; ?>
                   </div>
-                    <?='<h6>'.$_SESSION['namaunit'].'</h6>';?>
+                    <?='<h6>'.$_SESSION['nmsubunit'].'</h6>';?>
                 </div>
                 <?php }?> 
                 

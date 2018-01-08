@@ -2,7 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cmain extends CI_Controller {
-
+    function __construct() {
+        parent::__construct();
+        $this->load->model('moduser');    
+    }
+    
     public function index()
     {
         $data['banner'] = TRUE;
@@ -13,12 +17,5 @@ class Cmain extends CI_Controller {
                 
     }
     
-    public function login() {
-        $data['banner'] = TRUE;
-        $data['page'] = 'Vlogin';
-        $data['judul'] = 'Log-In';
-        $data['content']= '';
-        $data['content']['action'] = site_url('main/login');
-        $this->load->view('main', $data);        
-    }
+   
 }
