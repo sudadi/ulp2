@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class Clogin extends CI_Controller {
+class Login extends CI_Controller {
     function __construct() {
         parent::__construct();
             
@@ -49,7 +49,7 @@ class Clogin extends CI_Controller {
         $data['page'] = 'Vlogin';
         $data['judul'] = 'Log-In';
         $data['content']= '';
-        $data['content']['action'] = site_url('clogin');
+        $data['content']['action'] = site_url('login');
         $this->load->view('main', $data);        
     }
     

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cmain extends CI_Controller {
+class Main extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model('moduser');    
@@ -10,7 +10,7 @@ class Cmain extends CI_Controller {
     public function index()
     {
         $data['banner'] = TRUE;
-        $data['page'] = 'Vinfo';
+        $data['page'] = 'vinfo';
         $data['judul'] = 'Informasi';
         $data['content']= '';
         $this->load->view('main', $data);

@@ -14,9 +14,9 @@
             <ul class="dropdown-menu dropdown-usermenu pull-right">
                   <?php if ($this->session->userdata('usrmsk')== 'TRUE'){ ?>
                 <li><a href="<?=base_url('editpass') ;?>">Ubah Password</a></li>     
-                <li><a href="<?=base_url('clogin/logout');?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                <li><a href="<?=base_url('login/logout');?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                 <?php } else { ?>
-                <li><a href="<?=base_url('clogin');?>"><i class="fa fa-sign-in pull-right"></i> Log In</a></li>
+                <li><a href="<?=base_url('login');?>"><i class="fa fa-sign-in pull-right"></i> Log In</a></li>
                 <?php }?>               
                 <li><a href="javascript:;">Bantuan</a></li>
             </ul>
